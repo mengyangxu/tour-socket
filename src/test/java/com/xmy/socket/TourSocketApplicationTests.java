@@ -1,4 +1,4 @@
-package com.xmy.toursocket;
+package com.xmy.socket;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
