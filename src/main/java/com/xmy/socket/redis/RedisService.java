@@ -1,6 +1,7 @@
 package com.xmy.socket.redis;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -22,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class RedisService {
 
-	//@Autowired
+	@Autowired
 	private RedisTemplate<String, Object> redisTemplate;
 	
 	//=============================common============================

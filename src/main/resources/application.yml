@@ -1,15 +1,20 @@
 spring:
   application:
-    name: tour-portal
+    name: tour-socket
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://118.25.102.29:3306/tour?useUnicode=true&characterEncoding=utf8&autoReconnect=true&characterSetResults=utf8
+    username: root
+    password: root
+
   redis:
-      host: localhost
+      host: 118.25.102.29
       port: 6379
       timeout: 0
 
 
 server:
   port: 8082
-  connection-timeout: 10000000
 
 eureka:
   client:
